@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      table > tr > th {
+        color: red;
+      }
+      /* 브라우저에서는 tbody가 자동으로 생성되기 때문에 table > tbody > tr> td 이렇게 해야 적용됨*/
+    </style>
+  </head>
+  <body>
+    <!-- 이렇게 하지 마라, table 태그의 요소를 선택할 경우 자손 선택자를 사용 X-->
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Region</th>
+      </tr>
+      <tr>
+        <td>기웅</td>
+        <td>경기도 고양시 일산서구</td>
+      </tr>
+    </table>
+  </body>
+</html>

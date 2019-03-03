@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet" />
+
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+    <title>이게 모네네데ㅔ덷 자막테스트</title>
+  </head>
+  <body>
+    <video
+      controls
+      preload="auto"
+      width="640"
+      height="360"
+      data-setup="{}"
+      class="video-js "
+    >
+      <source src="./videos/Pexels Videos 1120579.mp4" type="video/mp4" />
+      <track kind="subtitles" src="./track.srt" srclang="ko" label="Korean" />
+      <track kind="subtitles" src="./track.srt" srclang="en" label="English" />
+      <track kind="subtitles" src="./track.srt" srclang="jp" label="Japan" />
+    </video>
+    <script src="https://vjs.zencdn.net/7.4.1/video.js"></script>
+  </body>
+</html>
